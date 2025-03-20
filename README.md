@@ -57,7 +57,7 @@ The build artifacts will be stored in the `dist/` directory.
 
 ## Bonus Feature
 
-- The application implements pagination with "Load More" functionality that loads additional characters as the user scrolls, providing a seamless browsing experience.
+- The application implements **infinite scrolling** that dynamically loads additional characters as the user scrolls, providing a seamless browsing experience without the need for traditional pagination or a "Load More" button.
 
 ## Author
 
