@@ -1,0 +1,69 @@
+.filters-container {
+  background-color: #f5f6fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.filters-container h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 18px;
+  color: #24325f;
+}
+
+.filters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.filter-group, .sort-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-group label, .sort-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+}
+
+.filter-group select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 14px;
+}
+
+.sort-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.sort-buttons button {
+  padding: 10px 12px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.sort-buttons button:hover {
+  background-color: #f0f0f0;
+}
+
+.sort-buttons button.active {
+  background-color: #24325f;
+  color: white;
+  border-color: #24325f;
+}
+
+@media (max-width: 768px) {
+  .filters-grid {
+    grid-template-columns: 1fr;
+  }
+} 
